@@ -67,7 +67,7 @@ namespace EEG_Data_Logger
             {
                 // now write the data
                 foreach (EdkDll.IEE_DataChannel_t channel in data.Keys)
-                    file.Write(data[channel][i] + ",");
+                    file.Write(data[channel][i] + ";");
                 file.WriteLine("");
 
             }
